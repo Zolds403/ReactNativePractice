@@ -11,7 +11,7 @@ export default function App() {
   };
 
   const addGoalHandler = () => {
-   setCourseGoals(currentGoals => [...currentGoals, enteredGoal]);
+   setCourseGoals = (currentGoals => [...currentGoals, enteredGoal]);
   };
 
   return (
@@ -25,12 +25,12 @@ export default function App() {
         />
         <Button title='ADD' onPress={addGoalHandler} />
       </View>
-      <ScrollView>
+      <View>
         {courseGoals.map( goal => ( 
           <View key={goal} style={styles.listItem}> 
             <Text>{goal}</Text> 
         </View>))}
-      </ScrollView> 
+      </View> 
     </View>
   );
 }
