@@ -28,7 +28,7 @@ export default function App() {
       <View>
         {courseGoals.map( goal => ( 
           <View key={goal} style={styles.listItem}> 
-            <Text>{goal}</Text> 
+            <Text > {goal} </Text> 
         </View>))}
       </View> 
     </View>
@@ -56,11 +56,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     borderColor: 'black',
     borderWidth: 1 
-  }
+  },
 });
-
-
-/* 
-  
-  
-  , */
