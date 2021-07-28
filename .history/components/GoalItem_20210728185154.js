@@ -10,8 +10,8 @@ const GoalItem = (props) => {
         <Text>{props.title}</Text>
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   listItem: {

@@ -1,17 +1,16 @@
-//jshint esversion: 6
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
 const GoalItem = (props) => {
   return (
 
-    <TouchableOpacity onPress={props.onDelete} >
+    <TouchableHighlight activeOpacity={0.8} onPress={props.onDelete} >
        <View style={styles.listItem}>
         <Text>{props.title}</Text>
       </View>
-    </TouchableOpacity>
-  )
-}
+    </TouchableHighlight>
+  );
+};
 
 const styles = StyleSheet.create({
   listItem: {

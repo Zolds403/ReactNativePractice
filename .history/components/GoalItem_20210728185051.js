@@ -1,4 +1,3 @@
-//jshint esversion: 6
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
@@ -10,8 +9,8 @@ const GoalItem = (props) => {
         <Text>{props.title}</Text>
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   listItem: {
