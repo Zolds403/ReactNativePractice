@@ -28,7 +28,7 @@ export default function App() {
     return (
       <View style={styles.screen}>
         <Button title='add new goal' onPress={() => setIsAddMode(true)}/>
-        <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} />
+        <GoalInput onAddGoal={addGoalHandler} />
         <FlatList
           keyExtractor={(item) => item.id}
           data={courseGoals}

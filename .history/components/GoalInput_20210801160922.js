@@ -10,7 +10,7 @@ const GoalInput = (props) => {
   };
 
   return (
-    <Modal visible={prop.visible} animationType='slide'>
+    <Modal visible={false}>
       <View style={styles.inputContainer}>
         <TextInput
           placeholder='Course Goal'
