@@ -54,6 +54,5 @@ const cancelGoalAddHandler = () => {
     screen: {
       padding: 50,
     },
-    
   })
 
